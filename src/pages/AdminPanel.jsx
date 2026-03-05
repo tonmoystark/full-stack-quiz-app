@@ -24,7 +24,7 @@ const AdminPanel = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://quiz_app.test/createQuestion.php", {
+    const response = await fetch("tonmoyquiz.is-best.net/quiz_app/createQuestion.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

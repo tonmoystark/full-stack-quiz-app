@@ -71,7 +71,7 @@ const UserPanel = () => {
     };
 
     try {
-      await fetch("http://quiz_app.test/saveResults.php", {
+      await fetch("http://tonmoyquiz.is-best.net/quiz_app/saveResults.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(quizResult),
