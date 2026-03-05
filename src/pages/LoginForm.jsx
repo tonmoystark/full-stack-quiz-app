@@ -28,7 +28,7 @@ const LoginForm = () => {
     }
     
     try {
-      const response = await fetch("tonmoyquiz.is-best.net/quiz_app/getUsers.php");
+      const response = await fetch("https://tonmoyquiz.is-best.net/quiz_app/getUsers.php");
       const result = await response.json();
 
 

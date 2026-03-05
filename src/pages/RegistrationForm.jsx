@@ -30,7 +30,7 @@ const RegistrationForm = () => {
       return;
     }
 
-    const response = await fetch("tonmoyquiz.is-best.net/quiz_app/register.php", {
+    const response = await fetch("https://tonmoyquiz.is-best.net/quiz_app/register.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

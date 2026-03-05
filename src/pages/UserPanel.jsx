@@ -20,7 +20,7 @@ const UserPanel = () => {
   }, []);
 
   const fetchQuestions = async () => {
-    const response = await fetch("http://quiz_app.test/getQuestions.php");
+    const response = await fetch("https://quiz_app.test/getQuestions.php");
     const result = await response.json();
     setQuestions(result);
   };

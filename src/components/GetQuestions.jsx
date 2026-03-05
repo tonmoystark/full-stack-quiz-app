@@ -8,7 +8,7 @@ const GetQuestions = ({handleSubmit}) => {
     }, [handleSubmit])
 
     const fetchQuestions = async () => {
-        const response = await fetch("tonmoyquiz.is-best.net/quiz_app/getQuestions.php");
+        const response = await fetch("https://tonmoyquiz.is-best.net/quiz_app/getQuestions.php");
         const result = await response.json();
         setQuestions(result);
     }

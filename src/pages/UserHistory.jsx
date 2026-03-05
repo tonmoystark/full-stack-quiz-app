@@ -15,7 +15,7 @@ useEffect(() => {
     
     
     try {
-      const response = await fetch(`http://tonmoyquiz.is-best.net/quiz_app/getUserHistory.php?user_id=${loggedInUser.id}`);
+      const response = await fetch(`https://tonmoyquiz.is-best.net/quiz_app/getUserHistory.php?user_id=${loggedInUser.id}`);
       const data = await response.json();
       setHistory(data);
       setLoading(false);
