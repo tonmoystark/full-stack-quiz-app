@@ -12,10 +12,10 @@ useEffect(() => {
 
   const getHistoryData = async () => {
     if (!loggedInUser?.id) return;
-    fetch("https://tonmoyquiz.is-best.net/quiz_app/getUsers.php")
+    fetch("https://quizapp-api.onrender.com/getUsers.php")
     
     try {
-      const response = await fetch(`https://tonmoyquiz.is-best.net/quiz_app/getUserHistory.php?user_id=${loggedInUser.id}`);
+      const response = await fetch(`https://quizapp-api.onrender.com/getUsers.php?user_id=${loggedInUser.id}`);
       const data = await response.json();
       setHistory(data);
       setLoading(false);
