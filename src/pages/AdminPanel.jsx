@@ -24,7 +24,7 @@ const AdminPanel = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://quizapp-api.onrender.com/createQuestion.php", {
+    const response = await fetch("https://quizapp-api-c8yt.onrender.com/createQuestion.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

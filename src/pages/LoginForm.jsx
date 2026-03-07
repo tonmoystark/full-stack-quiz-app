@@ -22,7 +22,7 @@ const LoginForm = () => {
     }
 
     try {
-      const response = await fetch("https://quizapp-api.onrender.com/login.php", {
+      const response = await fetch("https://quizapp-api-c8yt.onrender.com/login.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

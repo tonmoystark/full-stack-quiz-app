@@ -20,7 +20,7 @@ const UserPanel = () => {
   }, []);
 
   const fetchQuestions = async () => {
-    const response = await fetch("https://quizapp-api.onrender.com/getQuestions.php");
+    const response = await fetch("https://quizapp-api-c8yt.onrender.com/getQuestions.php");
     const result = await response.json();
     setQuestions(result);
   };
